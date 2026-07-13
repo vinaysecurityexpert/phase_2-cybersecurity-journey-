@@ -1,0 +1,17 @@
+
+Date: 2025-07-14
+Target IP: 192.168.1.100
+
+SERVICE 1: FTP
+Version: vsftpd 2.3.4
+Module Used: exploit/unix/ftp/vsftpd_234_backdoor
+Result: Shell/Meterpreter session opened
+User obtained: root
+Observation: Backdoor was introduced in compromised source code
+
+SERVICE 2: SAMBA
+Version: Samba 3.x
+Module Used: exploit/multi/samba/usermap_script  
+Result: Session opened
+User obtained: root
+Observation: Command injection via username fie
