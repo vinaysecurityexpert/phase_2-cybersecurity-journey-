@@ -1,0 +1,20 @@
+#!/bin/bash
+
+## Wordlists
+ls /usr/share/wordlists
+gzip -d /usr/share/wordlists/rockyou.txt.gz
+head /usr/share/wordlists/rockyou.txt
+wc -l /usr/share/wordlists/rockyou.txt
+
+## John the Ripper
+john
+john --wordlist
+john --show
+
+## Hashcat
+hashcat
+hashcat --help
+
+## Hash Identification
+hashid
+hash-identifier
