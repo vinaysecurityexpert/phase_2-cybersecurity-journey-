@@ -1,0 +1,27 @@
+#!/bin/bash
+
+## ARP
+arp -a
+ip neigh
+
+## Wireshark Filters
+http
+https
+dns
+tcp
+udp
+ftp
+smtp
+icmp
+
+## FTP
+ftp TARGET_IP
+
+## Telnet
+telnet TARGET_IP 23
+
+## SMTP
+telnet TARGET_IP 25
+
+## SNMP
+snmpwalk -v2c -c public TARGET_IP
