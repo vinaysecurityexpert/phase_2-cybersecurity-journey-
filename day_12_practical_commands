@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Docker
+docker pull vulnerables/web-dvwa
+docker run -d -p 80:80 vulnerables/web-dvwa
+docker ps
+docker start CONTAINER_ID
+docker stop CONTAINER_ID
+docker logs CONTAINER_ID
+
+#Burp Suite
+no commands only use or practice these modules in safe environment
+
+Proxy
+Repeater
+Intruder (only in your lab)
+Decoder
+Comparer
+
+# Browser
+Configure proxy: 127.0.0.1:8080
+
+# cURL
+curl http://localhost
+curl -I http://localhost
+curl -X GET http://localhost
+curl -X POST http://localhost
+
+# HTTP Methods
+curl -X GET http://localhost
+curl -X POST http://localhost
+curl -X PUT http://localhost/resource
+curl -X DELETE http://localhost/resource
+
+# Useful Linux Commands
+ss -tulnp
+netstat -tulnp
+ps aux
+systemctl status docker
+journalctl -xe
