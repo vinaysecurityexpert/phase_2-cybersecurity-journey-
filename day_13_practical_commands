@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#Docker
+docker ps
+docker start <container_id>
+docker stop <container_id>
+docker logs <container_id>
+
+# cURL
+
+Retrieve a page:
+curl http://localhost
+
+View only headers:
+curl -I http://localhost
+
+Verbose output:
+curl -v http://localhost
+
+Save a response:
+curl -o response.html http://localhost
+
+# Browser Proxy Verification
+
+After configuring Burp:
+127.0.0.1:8080
+Verify that requests pass through Burp before reaching DVWA.
+
+# SQLMap (Authorized Lab Only)
+
+Display help:
+sqlmap --help
+
+Check version:
+sqlmap --version
+
+Run detection against your local DVWA page:
+sqlmap -u "http://localhost/vulnerable_page.php?id=1"
+
+Use SQLMap only against systems you own or have explicit permission to test.
